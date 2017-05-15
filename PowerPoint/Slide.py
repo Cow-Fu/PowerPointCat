@@ -1,11 +1,24 @@
 
 class Slide:
-    def addTitle(self, title):
-        self.titles = title
-        
-    def addContent(self, content):
-        self.addContent = content
+    def getTitle(self):
+        return self.titles
 
-    def __init__(self, titles=None, contentHolders=None):
-        self.titles = titles
-        self.contentHolders = contentHolders
+    def setTitle(self, titles):
+        self.self.titles = titles
+
+    def getContent(self):
+        return contentHolders
+
+    def setContent(self, content):
+        self.content = content
+
+    def getMarkup(self):
+        return self.markup
+
+    def setMarkup(self, markup):
+        self.self.markup = markup
+
+    def __init__(self, title=None, content=None, markup=None):
+        self.title = titles
+        self.content = content
+        self.markup = markup
