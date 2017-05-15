@@ -5,7 +5,7 @@ events = {}
 class SlideBuilder:
     def traverseTree(self, markup):
         soup = markup
-        if not isinstance(markup, BeautifulSoup):
+        if not isinstance(soup, BeautifulSoup):
             soup = BeautifulSoup(markup, "lxml")
         keys = events.keys()
         text = ""
