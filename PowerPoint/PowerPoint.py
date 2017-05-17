@@ -1,5 +1,13 @@
 
 class PowerPoint:
+    def getName(self):
+        return self.name
+
+    def getFp(self):
+        return self.fp
+        
+    def getSlides(self):
+        return self.slides
     # def readFromSlide(self, slideNumber):
     #      with self.f.open(self.slides[slideNumber - 1]) as f:
     #         soup = BeautifulSoup(f.read(), "lxml")
@@ -17,5 +25,7 @@ class PowerPoint:
     #                     continue
     #                 string += txt
     #         return string.strip()
-    def __init__(self, slides):
+    def __init__(self, name, fp, slides):
+        self.name = name
+        self.fp = fp
         self.slides = slides
