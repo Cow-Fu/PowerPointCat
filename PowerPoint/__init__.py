@@ -1,4 +1,4 @@
 
-from Slide import Slide
-from SlideBuilder import SlideBuilder, on
-from PowerPoint.PowerPoint import PowerPoint
+from .Slide import Slide
+from .PowerPoint import PowerPoint
+from .MarkupWalker import MarkupWalker
