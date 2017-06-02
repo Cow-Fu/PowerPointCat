@@ -3,11 +3,25 @@ class PowerPoint:
     def getName(self):
         return self.name
 
+    def setName(self, name):
+        self.name = name
+        return self
+
     def getFp(self):
         return self.fp
-        
+
+    def setFp(self, fp):
+        self.fp = fp
+        return self
+
     def getSlides(self):
         return self.slides
+
+    def setSlides(self, slides):
+        self.slides = slides
+        return self
+
+
     # def readFromSlide(self, slideNumber):
     #      with self.f.open(self.slides[slideNumber - 1]) as f:
     #         soup = BeautifulSoup(f.read(), "lxml")
@@ -25,7 +39,3 @@ class PowerPoint:
     #                     continue
     #                 string += txt
     #         return string.strip()
-    def __init__(self, name, fp, slides):
-        self.name = name
-        self.fp = fp
-        self.slides = slides
