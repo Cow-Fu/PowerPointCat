@@ -19,6 +19,6 @@ class Slide:
         self.self.markup = markup
 
     def __init__(self, title=None, content=None, markup=None):
-        self.title = titles
+        self.title = title
         self.content = content
         self.markup = markup
